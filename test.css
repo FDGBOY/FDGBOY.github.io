@@ -9,10 +9,11 @@ nav{
     justify-content: space-between;
     /* border: 1px solid black; */
     padding: 10px;
+    background-color: black;
 }
 
 .logo a{
-    color: blueviolet;
+    color: white;
     font-weight: bold;
     font-size: 24px;
     text-decoration: none;
@@ -23,18 +24,19 @@ nav{
 }
 
 .menu li {
-    margin-left: 10px;
+    margin-left: 20px;
+    font-size: 25px;
 }
 
 .menu li a {
-    text-decoration: none;
-    color: darkmagenta;
+    text-decoration:none;
+    color: white;
 }
 
 .banner{
-    background-color: darkblue;
+    background-color: rgb(255, 62, 126);
     color: whitesmoke;
-    height: 400px;
+    height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,13 +64,18 @@ main div{
     padding: 20px;
 }
 
+main div h3{
+    font-size: 15px;
+    font-style:oblique;
+}
 main div p {
-    margin-top: 10px ;
+    margin-top: 12px ;
+    font-style: italic;
 }
 main img{
     width: 100%;
     border-radius: 30px;
-    border: 2px solid sandybrown;
+    /* border: 2px solid sandybrown; */
 }
 
 footer{
@@ -77,3 +84,10 @@ footer{
     padding: 20px;
     text-align: center;
 }
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
