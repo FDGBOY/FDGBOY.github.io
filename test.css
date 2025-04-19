@@ -4,85 +4,120 @@
     box-sizing: border-box;
 }
 
-nav{
+/* Reset styles */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
-    /* border: 1px solid black; */
-    padding: 10px;
-    background-color: black;
-}
-
-.logo a{
-    color: white;
-    font-weight: bold;
-    font-size: 24px;
-    text-decoration: none;
-}
-.menu{
-    display: flex;
-    list-style: none;
-}
-
-.menu li {
-    margin-left: 20px;
-    font-size: 25px;
-}
-
-.menu li a {
-    text-decoration:none;
-    color: white;
-}
-
-.banner{
-    background-color: rgb(255, 62, 126);
-    color: whitesmoke;
-    height: 350px;
-    display: flex;
-    justify-content: center;
     align-items: center;
-}   
+}
 
-.banner h1{
+nav .menu {
+    list-style: none;
+    display: flex;
+}
+
+nav .menu li {
+    margin: 0 10px;
+}
+
+nav .menu li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav .menu li a:hover {
+    color: #ff9800;
+}
+
+/* Banner section */
+.banner {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.2rem;
+}
+
+/* Main content */
+main {
+    padding: 20px;
+}
+
+main div {
+    margin-bottom: 30px;
+}
+
+main h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+footer .social-links {
     margin-top: 10px;
 }
 
-.banner-info{
-    text-align: center;
+footer .social-links a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s;
 }
 
-.banner-info img {
-    width: 300px;
-    border-radius: 100%;
-
-}
-main{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+footer .social-links a:hover {
+    color: #ff9800;
 }
 
-main div{
-    padding: 20px;
-}
-
-main div h3{
-    font-size: 15px;
-    font-style:oblique;
-}
-main div p {
-    margin-top: 12px ;
-    font-style: italic;
-}
-main img{
-    width: 100%;
-    border-radius: 30px;
-    /* border: 2px solid sandybrown; */
-}
-
-footer{
-    background-color: rgb(0, 0, 0);
-    color: aliceblue;
-    padding: 20px;
-    text-align: center;
+footer .social-links .social-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
 }
 
 .main {
@@ -90,4 +125,114 @@ footer{
     align-items: center;
     justify-content: center;
   }
-  
+
+a:hover {
+    color: #ff9800;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #e67e22;
+}
+
+.hero .btn-secondary {
+    background-color: #333;
+}
+
+.hero .btn-secondary:hover {
+    background-color: #555;
+}
+
+.about {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        margin: 5px 0;
+    }
+
+    nav .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner h1 {
+        font-size: 2rem;
+    }
+
+    .banner p {
+        font-size: 1rem;
+    }
+
+    main div {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
+}
+
+.logo-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff9800;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid #ff9800;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo-btn:hover {
+    background-color: #ff9800;
+    color: white;
+    transform: scale(1.1);
+}
+
